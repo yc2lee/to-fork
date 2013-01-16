@@ -14,6 +14,11 @@ int main(int argc, char **argv)
 
     printf("%s", copied.s);
 
+    struct str X = copied;
+
+    putchar('\n');
+    printf("%s", X.s);
+
     return 0;
 }
 

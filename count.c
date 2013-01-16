@@ -6,15 +6,18 @@ struct str {
 
 int main(int argc, char **argv)
 {
-    char *msg = "Hello there!";
+    char *msg = "Hello there! How are you?";
     struct str copied;
-    for(int i = 0; i < 201; i ++)
-        copied.s[i] = '?';
 
     char *p = msg, *q = copied.s; 
     while( (*q++ = *p++) ) ;
 
     printf("%s", copied.s);
+
+    struct str X = copied;
+
+    putchar('\n');
+    printf("%s", X.s);
 
     return 0;
 }

@@ -6,7 +6,7 @@ struct str {
 
 int main(int argc, char **argv)
 {
-    char *msg = "Hello there!";
+    char *msg = "Hello there! How are you?";
     struct str copied;
 
     char *p = msg, *q = copied.s; 

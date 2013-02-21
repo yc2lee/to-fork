@@ -6,6 +6,8 @@ struct str {
 
 int main(int argc, char **argv)
 {
+    int x = 11111111111;
+
     char *msg = "Hello there! How are you?";
     struct str copied;
 
